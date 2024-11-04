@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="content">
+            <h1>Sale Price Calculator</h1>
+
+            <div class="actualValue_info">
+				Product Price:<input type="number" id="productPrice" placeholder="Please enter product price" >
+			</div>
+            <p>Discount Code
+                <input type="text"  id="discountCode" placeholder="Please enter discount code">
+            </p>
+
+            <button onclick="saleCalculator()" type="button" class="btn btn-primary">Calculate</button>
+
+
+            <button type="button" onclick="ClearFields();" class="btn btn-default">Clear</button>
+            </br>
+            <h2>Sale/Discounted Price = <span id="disValue">$</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
